@@ -2,15 +2,16 @@ package org.example;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.Scanner;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
 
         String fileName = "src/main/resources/FactionsList.txt";
 
         readFromFile(fileName);
+        getUserInput();
     }
 
     /**
@@ -30,8 +31,23 @@ public class Main {
             System.out.println(exception.getMessage());
         }
 
+    }
 
-
+    public static void getUserInput() {
+        System.out.println("Don't say Q");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+            while(!input.equals("Q")){
+                System.out.println(input);
+                input = scanner.nextLine();
+        }
     }
 
 }
+
+/*
+ToDo: Number factions for user to input Int
+ToDo: Store Int in array
+ToDo: Create method to randomise Integers from array
+ToDo: Unit tests
+ */
