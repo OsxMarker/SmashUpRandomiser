@@ -1,0 +1,8 @@
+Warriors
+Clerics
+Mages
+Rogues
+Orcs
+Dwarves
+Elves
+Halfings
